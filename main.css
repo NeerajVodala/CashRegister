@@ -1,6 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--site-color);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  :root {
+    
+    --black-color: #000000;
+    --text-color: #14213D;
+    --fill-color: #FCA311;
+    --site-color: #E5E5E5;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    min-width: 100vw;
+  }
+  
+  .container {
+    margin: 4rem auto 7rem;
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  .heading {
+    color: var(--text-color);
+  }
+  
+  .description {
+    font-size: larger;
+    margin: 1rem;
+  }
+  
+  .input-label {
+    display: block;
+    font-size: large;
+    font-weight: 600;
+  }
+  
+  .input {
+    font-size: 14px;
+    
+    padding: 0.6rem 1rem;
+    margin: 1rem;
+    border: 2px solid var(--text-color);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 258px;
+  }
+  
+  #check-btn {
+    background: var(--text-color);
+    border: none;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    outline: var(--text-color);
+    margin: auto;
+    display: block;
+  }
+  
+  #error-message {
+    display: block;
+    font-size: larger;
+    margin: 1rem 0 0;
+  }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 50vh;
-}
+  .return-change {
+    width: 50%;
+    text-align: justify;
+    border-collapse: collapse;
+    margin: auto;
+  }
+  
+  .return-change caption {
+    margin: 1rem auto;
+    font-size: x-large;
+    font-weight: 500;
+  }
+  
+  th,
+  td {
+    border: 2px solid var(--text-color);
+    width: 0%;
+    border-collapse: collapse;
+    padding: 0.4rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: large;
+    text-align: center;
+  }
+  
+  .footer-list {
+    margin: 1rem;
+  }
+  
+  a,
+  img,
+  li {
+    display: inline;
+  }
+  
+  img {
+    width: 70px;
+    padding: 0.2rem;
+  }
