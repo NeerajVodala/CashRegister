@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     background-color: var(--site-color);
+    color: var(--text-color);
   }
   
   a {
@@ -118,3 +119,7 @@
     width: 50px;
     padding: 0.2rem;
   }
+
+  .svg--color-change {
+    filter: invert(9%) sepia(66%) saturate(1349%) hue-rotate(199deg) brightness(92%) contrast(93%);
+}
