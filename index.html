@@ -12,14 +12,14 @@
 <body>
     <div class="container">
         <h1 class="heading">CASH REGISTER 💸</h1>
-        <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to
+        <p class="description">Enter the bill amount and cash given by the customer to know minimum number of notes to
             return.</p>
         <label class="input-label" for="bill-amount">Bill Amount:</label>
-        <input class="input" type="number" id="bill-amount">
+        <input class="input" type="number" min="1" id="bill-amount">
         <label class="input-label" for="cash-given">Cash Given:</label>
-        <input class="input" type="number" id="cash-given">
-        <button id="check-btn">Check</button>
-        <p id="error-message"></p>
+        <input class="input" type="number" min="1" id="cash-given">
+        <button class="btn-check">Check</button>
+        <div class="result"></div>
         <table class="return-change">
             <caption class="caption">Notes To Be Returned:</caption>
             <tr>
@@ -45,34 +45,31 @@
 
         </table>
 </div>
-<footer>
-  <h3 class="footer-text">Get In Touch</h3>
-    <ul class="footer-list">
-      
-      <li>
-        <a
-          class="links"
-          href="https://www.linkedin.com/in/neerajvodala/"
-          target="_blank"
-        >
-          <img class="svg--color-change" src="images/linkedin.svg" alt="linkedin" />
-        </a>
-      </li>
-     
-      <li>
-        <a class="links" href="https://twitter.com/NeerajVodala21" target="_blank">
-          <img class="svg--color-change" src="images/twitter.svg" alt="twitter" />
-        </a>
-      </li>
+<hr>
+    <footer>
+        <h3 class="footer-text">Get In Touch</h3>
+        <ul class="footer-list">
 
-      <li>
-        <a class="links" href="https://github.com/neerajvodala/" target="_blank">
-          <img class="svg--color-change" src="images/github.svg" alt="github" />
-        </a>
-      </li>
-      
-    </ul>
-  </footer>
+            <li>
+                <a class="links" href="https://www.linkedin.com/in/neerajvodala/" target="_blank">
+                    <img class="svg--color-change" src="images/linkedin.svg" alt="linkedin" />
+                </a>
+            </li>
+
+            <li>
+                <a class="links" href="https://twitter.com/NeerajVodala21" target="_blank">
+                    <img class="svg--color-change" src="images/twitter.svg" alt="twitter" />
+                </a>
+            </li>
+
+            <li>
+                <a class="links" href="https://github.com/neerajvodala/" target="_blank">
+                    <img class="svg--color-change" src="images/github.svg" alt="github" />
+                </a>
+            </li>
+
+        </ul>
+    </footer>
 <script src="/app.js"></script>
 </body>
 </html>
