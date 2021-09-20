@@ -3,8 +3,15 @@ const cashGiven = document.querySelector("#cash-given");
 const checkButton = document.querySelector(".btn-check");
 const message = document.querySelector(".result");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
-
+const nextContainer = document.querySelector(".next-container");
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
+
+nextContainer.style.display = "none";
+
+billAmount.addEventListener("input", () => {
+    nextContainer.style.display = "block";
+})
+
 checkButton.addEventListener("click", function onClick() {
     hideMessage()
     if (billAmount.value > 0 && cashGiven.value > 0) {

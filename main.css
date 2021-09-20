@@ -66,6 +66,7 @@ body {
     outline: var(--text-color);
     margin: auto;
     display: block;
+    margin-bottom: 1rem;
 }
 
 .result {
